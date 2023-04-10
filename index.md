@@ -1,3 +1,3 @@
 # Notes from Esmé Puzio
 
-Notes will be filled in here as the quarter progresses.
+Notes will be filled in here later
