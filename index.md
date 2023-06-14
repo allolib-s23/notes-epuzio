@@ -13,7 +13,7 @@ This is a transcription of Boy’s a Liar by Pink Panthress written within Allol
 
 To play: run ./run.sh tutorials/synthesis/00_DogLoveGenerativeDemo.cpp .
 
-With this piece, I wanted to incorporate randomness into an original composition based around the work of Devi McCallion/Girls Rituals. The piece incorporates randomness in the number of phrases at the start (1, 2 or 3), the number of phrases at the bridge (1 or 2), the patterns of the hi-hat and bass (choosing from 4 preset options), the notes played in the arpeggios (which were based on randomly chosen chord inversions) and the scale the piece was played in. I used this piece to demo the note transposition function and chord builder function I created in randomnessHelper.h, since the note transposition function made it easy to change between major scales. This piece is loosely inspired by the work of Devi McCallion/Girls Rituals/Mom, especially the songs “Bloodeater”, “I [Mess] Everything Up” and “Un See Through”.
+With this piece, I wanted to incorporate randomness into an original composition based around the work of Devi McCallion/Girls Rituals. The piece incorporates randomness in the number of phrases at the start (1, 2 or 3), the number of phrases at the bridge (1 or 2), the patterns of the hi-hat and bass (choosing from 4 preset options), the notes played in the arpeggios (which were based on randomly chosen chord inversions) and the scale the piece was played in. I used this piece to demo the note transposition function and chord builder function I created in randomness.h, since the note transposition function made it easy to change between major scales. This piece is loosely inspired by the work of Devi McCallion/Girls Rituals/Mom, especially the songs “Bloodeater”, “I [Mess] Everything Up” and “Un See Through”.
 
 ## Piece 3: DogLove V2 (Original Composition)
 [Link to composition](https://github.com/allolib-s23/demo1-epuzio/blob/master/tutorials/synthesis/00_DogLoveV2.cpp)
@@ -39,7 +39,9 @@ This piece is a transcription of the song “Worst In Me” by Devi McCallion/Gi
 
 # Helper class:
 ## randomness.h
+
 [Link to helper](https://github.com/allolib-s23/demo1-epuzio/blob/master/tutorials/synthesis/randomness.h)
+
 This helper class includes a few functions which can help provide elements of randomness in a piece of music.
   * getFreq(int n, int octave, int transpose = 0)
   * * Given the name of a note, octave and number of half-steps to transpose the note, returns a frequency corresponding to that note. This function makes it easy to transpose pieces of music by passing in a single value, and makes it so that the user doesn't need to hardcode frequencies in their demos.
