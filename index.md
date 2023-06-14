@@ -32,11 +32,12 @@ This piece is loosely inspired by the song “You Can’t Stop Me” by Alex G f
 This piece is a transcription of the song “Worst In Me” by Devi McCallion/Girls Rituals written within Allolib. I chose to arrange this piece in particular because Devi McCallion’s beats follow simple chord structures and often incorporate randomness. I used al_SoundFile to play vocals alongside the piece, which I created using the Eleanor Forte Lite voicebank for Synthesizer V Studio Basic. My goal for this piece was to create a song that incorporated both instruments and vocals. Unfortunately, for whatever reason, allolib speeds up the .wav file I included as vocals for this piece, so the instrumentation and vocals are not perfectly synched, and it does not sound very good.
 
 # Helper class:
-## randomnessHelper.h
-[Link to helper](https://github.com/allolib-s23/demo1-epuzio/blob/master/tutorials/synthesis/randomnessHelper.h)
+## randomness.h
+[Link to helper](https://github.com/allolib-s23/demo1-epuzio/blob/master/tutorials/synthesis/randomness.h)
 This helper class includes a few functions which can help provide elements of randomness in a piece of music.
   * getFreq(int n, int octave, int transpose = 0)
-  * * Given the name of a note, octave and number of half-steps to transpose the note, returns a frequency corresponding to that note. This function makes it easy to transpose pieces of music by passing in a single value.
+  * * Given the name of a note, octave and number of half-steps to transpose the note, returns a frequency corresponding to that note. This function makes it easy to transpose pieces of music by passing in a single value, and makes it so that the user doesn't need to hardcode frequencies in their demos.
+    * The program [00_transpose_demo](https://github.com/allolib-s23/demo1-epuzio/blob/master/tutorials/synthesis/00_transpose_demo.cpp) is what I initially showed in class to demonstrate transposition.
   * axisProgression(string n, int octave, int transpose = 0)
   * * Given a starting note, selects from 4 preset orders of chords with random inversions corresponding to the axis progression, transposed into the scale of the starting note. The axis progression is the four chords most commonly associated with pop music (C, Am, F, G).
   * getMarkovNotes(string n, int octave, int transpose, int sequenceLength)
